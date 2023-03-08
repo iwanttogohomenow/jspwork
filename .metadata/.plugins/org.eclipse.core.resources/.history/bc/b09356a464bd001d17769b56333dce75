@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>403 에러 발생</title>
+</head>
+<body>
+<strong>HTTP 상태 401 - 인가 안 됨</strong>
+	<br>
+	<br> 대상 리소스에 접근하기 위한 유요한 인증 credentials가 없기 때문에, 요청에 적용되지 않았습니다.
+
+</body>
+</html>
