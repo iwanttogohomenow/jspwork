@@ -40,7 +40,18 @@
 		
 	}
 	%>
-	<p>가입 인사: <%=comment %>
+	</p>
+	<p>가입 인사: <%=comment %></p>
+	<% pageContext.setAttribute("LF","\n");
+	%>
+<%-- 	<% pageContext.setAttribute("comment" , comment);%> --%>
+<c:set var="com" value="<%=comment %>"/>
+<p>
+
+<textarea name="comment" cols="30" rows="3" placeholder="가입인사를 입력해주세요"><%= comment %></textarea>
+</p>
+<p>
+<c:out escapeXml ="false" value="${fn:replace( com , LF , '<br>')}"></c:out></p>
 	
 </body>
 </html>
