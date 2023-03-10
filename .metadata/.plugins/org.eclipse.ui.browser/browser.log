@@ -28,3 +28,7 @@
 3월 08, 2023 17:00:50.387 NEW SESSION
 3월 08, 2023 17:00:50.387 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
 3월 08, 2023 17:01:34.349 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+
+3월 10, 2023 11:35:47.584 NEW SESSION
+3월 10, 2023 11:35:47.584 [11300:14104:0310/113547.582:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error
+3월 10, 2023 11:36:05.659 [11300:14104:0310/113605.658:ERROR:device_event_log_impl.cc(218)] [11:36:05.658] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.

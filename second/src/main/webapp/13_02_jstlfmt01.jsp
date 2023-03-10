@@ -43,7 +43,7 @@ scope="4개영역" /&gt;<br>
 			<fmt:message key="idKey" />
 			<fmt:message key="id" />
 		</p>
-			<!-- message 값을 출력하고 var라는 속성이 없어야지 메시지가 출력된다. key="idKey"인걸 가져와라 -->
+		<!-- message 값을 출력하고 var라는 속성이 없어야지 메시지가 출력된다. key="idKey"인걸 가져와라 -->
 		<p>
 			<fmt:message key="passwordKey" />
 			<fmt:message key="password" />
