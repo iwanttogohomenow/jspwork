@@ -1,0 +1,66 @@
+package com.filter;
+
+import java.io.IOException;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.http.HttpFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+public class LoginCheckFilter implements Filter {
+       
+
+	@Override
+	
+	public void init(FilterConfig config) throws ServletException {
+		System.out.println("LoginCheckFilter 초기화...");
+	}
+	
+@Override
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	System.out.println("로그인 체크");
+	
+/*
+ * 1.getSession(), getSession(true) : 디폴트
+
+ *-HttpSession이 존재하면 현재 HttpSession을 반환하고
+ *존재하지 않으면 새로이 세션을 생성함.
+ *
+ *2.getSession(false)
+ *-HttpSession이 존재하면 현재 HttpSession을 반환하고
+ *존재하지 않으면 새로이 생성하지 않고 그냥 null을 반환함.
+ */
+HttpServletRequest httpRequest = (HttpServletRequest) request; //부모를 다운캐스팅
+HttpSession session = httpRequest.getSession(false); //응답까지 하질 않아서 session객체가 생기지 않음=,false=>null을 반환하라
+System.out.println("session: " + session);
+boolean login = false; //input에 아무것도 넣지 않으면 null반환 
+	if(session != null) { //session이 있으면
+		if(!session.getAttribute("MEMBER").toString().equals("")) login = true;
+	}
+		if(login) { 
+			chain.doFilter(request,response); 
+		}
+		else {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/18_01_loginForm.jsp");
+			dispatcher.forward(request, response); //forward처리,url은 바뀌지 않고 페이지만 바뀜
+			//RequestDispatcher : 현재 request에 담고 있는 정보를 저장하고 있다가
+			//그 다음 페이지, 다음 페이지에서도 해당 정보를 볼 수 있게 저장하는 기능을 한다.
+			//url을 엮어줘야함 request.getRequestDispatcher("/18_01_loginForm.jsp");
+}	
+}
+	
+
+public void destroy() {
+		
+	}
+
+
+
+}

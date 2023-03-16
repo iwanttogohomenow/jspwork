@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="C:\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\servletproject1" path="/servletproject1" reloadable="true" source="org.eclipse.jst.jee.server:servletproject1"> 
+  <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" maxActive="500" maxIdle="100" name="jdbc/OracleDB" password="1111" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:XE" username="test"/>  
+</Context>

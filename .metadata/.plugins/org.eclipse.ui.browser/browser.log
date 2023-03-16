@@ -1,0 +1,23 @@
+
+3월 14, 2023 09:58:36.485 NEW SESSION
+3월 14, 2023 09:58:36.485 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 10:13:30.918 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 10:13:40.273 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 10:13:57.792 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 14, 2023 10:18:44.807 NEW SESSION
+3월 14, 2023 10:18:44.807 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 10:19:06.757 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 14, 2023 10:57:46.856 NEW SESSION
+3월 14, 2023 10:57:46.856 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 12:19:13.259 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 12:19:38.130 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 12:21:36.455 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+3월 14, 2023 12:50:29.418 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 14:50:30.881 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2023 18:00:49.228 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 15, 2023 11:46:51.325 NEW SESSION
+3월 15, 2023 11:46:51.325 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 15, 2023 11:48:05.726 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

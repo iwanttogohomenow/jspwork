@@ -1,0 +1,25 @@
+package action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import vo.ActionForward;
+import vo.MemberBean;
+
+public class MemberJoinAction implements Action{
+
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		MemberBean member = new MemberBean();
+		boolean joinResult = false;
+		
+		member.setMEMBER_ID(request.getParameter("MEMBER_ID"));
+		member.setMEMBER_PW(request.getParameter("MEMBER_PW"));
+		member.setMEMBER_NAME(request.getParameter("MEMBER_NAME"));
+		member.setMEMBER_AGE(Integer.parseInt(requeust.));
+		member.setMEMBER_GENDER(request.getParameter(""));
+		member.setMEMBER_EMAIL(request.getParameter);
+		
+	}
+
+}
